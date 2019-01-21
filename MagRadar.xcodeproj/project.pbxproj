@@ -1,0 +1,591 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		835EF7CE21F5C90400E06BC2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835EF7CD21F5C90400E06BC2 /* AppDelegate.swift */; };
+		835EF7D021F5C90400E06BC2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835EF7CF21F5C90400E06BC2 /* ViewController.swift */; };
+		835EF7D321F5C90400E06BC2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 835EF7D121F5C90400E06BC2 /* Main.storyboard */; };
+		835EF7D521F5C90600E06BC2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 835EF7D421F5C90600E06BC2 /* Assets.xcassets */; };
+		835EF7D821F5C90600E06BC2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 835EF7D621F5C90600E06BC2 /* LaunchScreen.storyboard */; };
+		835EF7E321F5C90600E06BC2 /* MagRadarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835EF7E221F5C90600E06BC2 /* MagRadarTests.swift */; };
+		835EF7EE21F5C90600E06BC2 /* MagRadarUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835EF7ED21F5C90600E06BC2 /* MagRadarUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		835EF7DF21F5C90600E06BC2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 835EF7C221F5C90400E06BC2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 835EF7C921F5C90400E06BC2;
+			remoteInfo = MagRadar;
+		};
+		835EF7EA21F5C90600E06BC2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 835EF7C221F5C90400E06BC2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 835EF7C921F5C90400E06BC2;
+			remoteInfo = MagRadar;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		835EF7CA21F5C90400E06BC2 /* MagRadar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MagRadar.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		835EF7CD21F5C90400E06BC2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		835EF7CF21F5C90400E06BC2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		835EF7D221F5C90400E06BC2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		835EF7D421F5C90600E06BC2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		835EF7D721F5C90600E06BC2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		835EF7D921F5C90600E06BC2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		835EF7DE21F5C90600E06BC2 /* MagRadarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MagRadarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		835EF7E221F5C90600E06BC2 /* MagRadarTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagRadarTests.swift; sourceTree = "<group>"; };
+		835EF7E421F5C90600E06BC2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		835EF7E921F5C90600E06BC2 /* MagRadarUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MagRadarUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		835EF7ED21F5C90600E06BC2 /* MagRadarUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagRadarUITests.swift; sourceTree = "<group>"; };
+		835EF7EF21F5C90600E06BC2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		835EF7C721F5C90400E06BC2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		835EF7DB21F5C90600E06BC2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		835EF7E621F5C90600E06BC2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		835EF7C121F5C90400E06BC2 = {
+			isa = PBXGroup;
+			children = (
+				835EF7CC21F5C90400E06BC2 /* MagRadar */,
+				835EF7E121F5C90600E06BC2 /* MagRadarTests */,
+				835EF7EC21F5C90600E06BC2 /* MagRadarUITests */,
+				835EF7CB21F5C90400E06BC2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		835EF7CB21F5C90400E06BC2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				835EF7CA21F5C90400E06BC2 /* MagRadar.app */,
+				835EF7DE21F5C90600E06BC2 /* MagRadarTests.xctest */,
+				835EF7E921F5C90600E06BC2 /* MagRadarUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		835EF7CC21F5C90400E06BC2 /* MagRadar */ = {
+			isa = PBXGroup;
+			children = (
+				835EF7CD21F5C90400E06BC2 /* AppDelegate.swift */,
+				835EF7CF21F5C90400E06BC2 /* ViewController.swift */,
+				835EF7D121F5C90400E06BC2 /* Main.storyboard */,
+				835EF7D421F5C90600E06BC2 /* Assets.xcassets */,
+				835EF7D621F5C90600E06BC2 /* LaunchScreen.storyboard */,
+				835EF7D921F5C90600E06BC2 /* Info.plist */,
+			);
+			path = MagRadar;
+			sourceTree = "<group>";
+		};
+		835EF7E121F5C90600E06BC2 /* MagRadarTests */ = {
+			isa = PBXGroup;
+			children = (
+				835EF7E221F5C90600E06BC2 /* MagRadarTests.swift */,
+				835EF7E421F5C90600E06BC2 /* Info.plist */,
+			);
+			path = MagRadarTests;
+			sourceTree = "<group>";
+		};
+		835EF7EC21F5C90600E06BC2 /* MagRadarUITests */ = {
+			isa = PBXGroup;
+			children = (
+				835EF7ED21F5C90600E06BC2 /* MagRadarUITests.swift */,
+				835EF7EF21F5C90600E06BC2 /* Info.plist */,
+			);
+			path = MagRadarUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		835EF7C921F5C90400E06BC2 /* MagRadar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 835EF7F221F5C90600E06BC2 /* Build configuration list for PBXNativeTarget "MagRadar" */;
+			buildPhases = (
+				835EF7C621F5C90400E06BC2 /* Sources */,
+				835EF7C721F5C90400E06BC2 /* Frameworks */,
+				835EF7C821F5C90400E06BC2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MagRadar;
+			productName = MagRadar;
+			productReference = 835EF7CA21F5C90400E06BC2 /* MagRadar.app */;
+			productType = "com.apple.product-type.application";
+		};
+		835EF7DD21F5C90600E06BC2 /* MagRadarTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 835EF7F521F5C90600E06BC2 /* Build configuration list for PBXNativeTarget "MagRadarTests" */;
+			buildPhases = (
+				835EF7DA21F5C90600E06BC2 /* Sources */,
+				835EF7DB21F5C90600E06BC2 /* Frameworks */,
+				835EF7DC21F5C90600E06BC2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				835EF7E021F5C90600E06BC2 /* PBXTargetDependency */,
+			);
+			name = MagRadarTests;
+			productName = MagRadarTests;
+			productReference = 835EF7DE21F5C90600E06BC2 /* MagRadarTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		835EF7E821F5C90600E06BC2 /* MagRadarUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 835EF7F821F5C90600E06BC2 /* Build configuration list for PBXNativeTarget "MagRadarUITests" */;
+			buildPhases = (
+				835EF7E521F5C90600E06BC2 /* Sources */,
+				835EF7E621F5C90600E06BC2 /* Frameworks */,
+				835EF7E721F5C90600E06BC2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				835EF7EB21F5C90600E06BC2 /* PBXTargetDependency */,
+			);
+			name = MagRadarUITests;
+			productName = MagRadarUITests;
+			productReference = 835EF7E921F5C90600E06BC2 /* MagRadarUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		835EF7C221F5C90400E06BC2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Mac-wk";
+				TargetAttributes = {
+					835EF7C921F5C90400E06BC2 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					835EF7DD21F5C90600E06BC2 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 835EF7C921F5C90400E06BC2;
+					};
+					835EF7E821F5C90600E06BC2 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 835EF7C921F5C90400E06BC2;
+					};
+				};
+			};
+			buildConfigurationList = 835EF7C521F5C90400E06BC2 /* Build configuration list for PBXProject "MagRadar" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 835EF7C121F5C90400E06BC2;
+			productRefGroup = 835EF7CB21F5C90400E06BC2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				835EF7C921F5C90400E06BC2 /* MagRadar */,
+				835EF7DD21F5C90600E06BC2 /* MagRadarTests */,
+				835EF7E821F5C90600E06BC2 /* MagRadarUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		835EF7C821F5C90400E06BC2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				835EF7D821F5C90600E06BC2 /* LaunchScreen.storyboard in Resources */,
+				835EF7D521F5C90600E06BC2 /* Assets.xcassets in Resources */,
+				835EF7D321F5C90400E06BC2 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		835EF7DC21F5C90600E06BC2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		835EF7E721F5C90600E06BC2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		835EF7C621F5C90400E06BC2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				835EF7D021F5C90400E06BC2 /* ViewController.swift in Sources */,
+				835EF7CE21F5C90400E06BC2 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		835EF7DA21F5C90600E06BC2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				835EF7E321F5C90600E06BC2 /* MagRadarTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		835EF7E521F5C90600E06BC2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				835EF7EE21F5C90600E06BC2 /* MagRadarUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		835EF7E021F5C90600E06BC2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 835EF7C921F5C90400E06BC2 /* MagRadar */;
+			targetProxy = 835EF7DF21F5C90600E06BC2 /* PBXContainerItemProxy */;
+		};
+		835EF7EB21F5C90600E06BC2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 835EF7C921F5C90400E06BC2 /* MagRadar */;
+			targetProxy = 835EF7EA21F5C90600E06BC2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		835EF7D121F5C90400E06BC2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				835EF7D221F5C90400E06BC2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		835EF7D621F5C90600E06BC2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				835EF7D721F5C90600E06BC2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		835EF7F021F5C90600E06BC2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		835EF7F121F5C90600E06BC2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		835EF7F321F5C90600E06BC2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7XZYF52S7J;
+				INFOPLIST_FILE = MagRadar/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = geokylin.cn.MagRadar;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		835EF7F421F5C90600E06BC2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7XZYF52S7J;
+				INFOPLIST_FILE = MagRadar/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = geokylin.cn.MagRadar;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		835EF7F621F5C90600E06BC2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7XZYF52S7J;
+				INFOPLIST_FILE = MagRadarTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = geokylin.cn.MagRadarTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MagRadar.app/MagRadar";
+			};
+			name = Debug;
+		};
+		835EF7F721F5C90600E06BC2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7XZYF52S7J;
+				INFOPLIST_FILE = MagRadarTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = geokylin.cn.MagRadarTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MagRadar.app/MagRadar";
+			};
+			name = Release;
+		};
+		835EF7F921F5C90600E06BC2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7XZYF52S7J;
+				INFOPLIST_FILE = MagRadarUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = geokylin.cn.MagRadarUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MagRadar;
+			};
+			name = Debug;
+		};
+		835EF7FA21F5C90600E06BC2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7XZYF52S7J;
+				INFOPLIST_FILE = MagRadarUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = geokylin.cn.MagRadarUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MagRadar;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		835EF7C521F5C90400E06BC2 /* Build configuration list for PBXProject "MagRadar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				835EF7F021F5C90600E06BC2 /* Debug */,
+				835EF7F121F5C90600E06BC2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		835EF7F221F5C90600E06BC2 /* Build configuration list for PBXNativeTarget "MagRadar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				835EF7F321F5C90600E06BC2 /* Debug */,
+				835EF7F421F5C90600E06BC2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		835EF7F521F5C90600E06BC2 /* Build configuration list for PBXNativeTarget "MagRadarTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				835EF7F621F5C90600E06BC2 /* Debug */,
+				835EF7F721F5C90600E06BC2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		835EF7F821F5C90600E06BC2 /* Build configuration list for PBXNativeTarget "MagRadarUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				835EF7F921F5C90600E06BC2 /* Debug */,
+				835EF7FA21F5C90600E06BC2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 835EF7C221F5C90400E06BC2 /* Project object */;
+}
