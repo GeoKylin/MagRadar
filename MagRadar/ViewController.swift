@@ -10,18 +10,23 @@ import UIKit
 import CoreMotion
 
 class ViewController: UIViewController {
+    // 参数
+    let magDecimal:Int = 4 //磁场强度小数位数
+    let timeInterval: TimeInterval = 0.2 //刷新时间间隔
 
     // 变量
     var magVals:[Double] = [0,1,2,3] //磁强计的值
-    var magDecimal:Int = 4 //磁场强度小数位数
-    let timeInterval: TimeInterval = 0.2 //刷新时间间隔
+    var magBase:[Double] = [0,0,0,0] //背景磁场
+    var origin:[CGFloat] = [0,0] //原点坐标
+    var didCali:Bool = false //是否校正
 
     // 控件
     @IBOutlet weak var magXView: UILabel! //X分量
     @IBOutlet weak var magYView: UILabel! //Y分量
     @IBOutlet weak var magZView: UILabel! //Z分量
     @IBOutlet weak var magFView: UILabel! //总磁场
-
+    @IBOutlet weak var targetView: UIButton! //目标
+    
     // 传感器管理器
     let motionManager = CMMotionManager()
 
@@ -29,7 +34,10 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         /**** 视图加载完毕 ****/
-        //开始磁力计更新
+        // 获取原点坐标
+        origin[0] = targetView.frame.origin.x
+        origin[1] = targetView.frame.origin.y
+        // 开始磁力计更新
         startMagnetometerUpdates()
 
     }
@@ -72,10 +80,15 @@ class ViewController: UIViewController {
                     self.magVals[2] = magZ
                     self.magVals[3] = magF
                     // 显示数据
-                    self.magXView.text = String(format: "%0."+String(self.magDecimal)+"f uT", magX)
-                    self.magYView.text = String(format: "%0."+String(self.magDecimal)+"f uT", magY)
-                    self.magZView.text = String(format: "%0."+String(self.magDecimal)+"f uT", magZ)
-                    self.magFView.text = String(format: "%0."+String(self.magDecimal)+"f uT", magF)
+                    self.magXView.text = String(format: "X:%0."+String(self.magDecimal)+"f uT", magX - self.magBase[0])
+                    self.magYView.text = String(format: "Y:%0."+String(self.magDecimal)+"f uT", magY - self.magBase[1])
+                    self.magZView.text = String(format: "Z:%0."+String(self.magDecimal)+"f uT", magZ - self.magBase[2])
+                    self.magFView.text = String(format: "F:%0."+String(self.magDecimal)+"f uT", magF - self.magBase[3])
+                    // 目标位置
+                    if self.didCali {
+                        self.targetView.frame.origin.x = self.origin[0] + (CGFloat)(magX - self.magBase[0])
+                        self.targetView.frame.origin.y = self.origin[1] + (CGFloat)(magY - self.magBase[1])
+                    }
                 }
             }
         })
@@ -93,9 +106,10 @@ class ViewController: UIViewController {
         }
     }
 
-    @IBAction func checkButton(_ sender: Any) {
-        // 提示框
-        warningAlert(warningText: "Check！")
+    // 背景场校正
+    @IBAction func calibrateButton(_ sender: Any) {
+        magBase = magVals
+        didCali = true
     }
 
 }
