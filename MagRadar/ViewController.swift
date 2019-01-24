@@ -122,7 +122,7 @@ class ViewController: UIViewController {
         } else if abs(offsetX) > threshold[1] || abs(offsetY) > threshold[1] {
             return [0, 0]
         } else {
-            return [-CGFloat((threshold[1] - abs(offsetX))*sign(input: offsetX)), CGFloat((threshold[1] - offsetY)*sign(input: offsetY))]
+            return [-CGFloat((threshold[1] - abs(offsetX))*sign(input: offsetX)), CGFloat((threshold[1] - abs(offsetY))*sign(input: offsetY))]
         }
     }
     
